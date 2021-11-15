@@ -13,9 +13,13 @@ library(janitor)
 library(here)
 ```
 
-```{r}
+```{r echo = TRUE, warning = FALSE, message = FALSE}
 # read in the data
 ces <- read_csv(here("data", "ces3demographics.csv")) %>%
   clean_names()
+```
+
+```{r echo = TRUE, warning = FALSE, message = FALSE}
+ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) 
 ```
 
