@@ -31,3 +31,9 @@ ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
    theme_minimal()
 ```
 
+**Figure 1. CalEnviroScreen 3.0 score versus percentage of the white residents.** Based on Figure 1, it seems that CES 3.0 Score and percentage of white residents are negatively correlated. This means neighborhoods with more diverse ethnicity (people of color) experience more collective environmental burdens, such as pollution. 
+
+### Citation:
+Wieland, W. 2018. CalEnviroScreen 3.0 Results. Office of Environmental Health Hazard Assessment.  https://data.ca.gov/dataset/calenviroscreen-3-0-results (Accessed 2021-11-14). 
+
+
