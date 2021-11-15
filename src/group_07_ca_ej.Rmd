@@ -4,7 +4,7 @@ author: Grace Bianchi & Atefeh Mohseni
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, message = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
 # attach packages
@@ -24,7 +24,8 @@ ces <- read_csv(here("data", "ces3demographics.csv")) %>%
 ggplot(data = ces, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex() +
   labs(x = "% White population",
-       y = "CES 3.0 Score") +
+       y = "CES 3.0 Score",
+       caption = "Data from 2010 Census") +
    geom_col(position = "fill") +
    scale_fill_gradient(low = "yellow", high = "red") + 
    theme_minimal()
