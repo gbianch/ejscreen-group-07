@@ -6,5 +6,16 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+# attach packages
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+```{r}
+# read in the data
+ces <- read_csv(here("data", "ces3demographics.csv")) %>%
+  clean_names()
 ```
 
